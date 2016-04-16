@@ -25,12 +25,17 @@ private:
   int steps;
   int energy;
 public:
-  
+  Display ();
+  void intro_display();
+  string GetName();
+  string GetLevel();
+  int GetEnergy();
+  int GetSteps();
 };
 
 void display_init();
 void display_close();
 void intro_display();
-void displaytext (std::ifstream&); 
-void displaytext_delay(std::ifstream& );
-void clearDisplay(int);
+void clearDisplay(int num);
+
+#endif
